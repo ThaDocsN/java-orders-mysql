@@ -12,7 +12,7 @@ public class DBConfiguration {
     public DataSource dataSource() {
         DataSourceBuilder dataSourceBuilder = DataSourceBuilder.create();
         dataSourceBuilder.driverClassName("com.mysql.cj.jdbc.Driver");
-        dataSourceBuilder.url("jdbc:mysql://localhost:3306/customerorders");
+        dataSourceBuilder.url("jdbc:mysql://localhost:1572/customerorders");
         dataSourceBuilder.username("root");
         dataSourceBuilder.password("char1972");
         return dataSourceBuilder.build();
