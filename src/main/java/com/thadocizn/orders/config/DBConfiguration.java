@@ -11,8 +11,10 @@ public class DBConfiguration {
     @Bean
     public DataSource dataSource() {
         DataSourceBuilder dataSourceBuilder = DataSourceBuilder.create();
-        dataSourceBuilder.driverClassName("org.sqlite.JDBC");
-        dataSourceBuilder.url("jdbc:sqlite:orders.db");
+        dataSourceBuilder.driverClassName("com.mysql.cj.jdbc.Driver");
+        dataSourceBuilder.url("jdbc:mysql://localhost:3306/customerorders");
+        dataSourceBuilder.username("root");
+        dataSourceBuilder.password("char1972");
         return dataSourceBuilder.build();
     }
 
